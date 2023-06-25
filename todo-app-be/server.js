@@ -7,7 +7,7 @@ app.use(cors())
 const app = express();
 app.use(bodyParser.json())
 //get all the todos
-app.get("/todos", (req, res) => {
+app.get("https://todo-app-kvcr.onrender.com/todos", (req, res) => {
     fs.readFile("todos.json", "utf-8", (err, data) => {
       if (err) throw err;
       res.send(JSON.parse(data));
