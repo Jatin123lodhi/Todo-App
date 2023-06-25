@@ -2,8 +2,8 @@
 I have built my first full-stack application using React and Express
 
 # Features -> 
-See all the todos
-You can add a new todo   
+See all the todos <br>
+You can add a new todo <br>   
 Delete a todo
 
 How it looks - 
