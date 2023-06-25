@@ -6,7 +6,7 @@ function App() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   useEffect(() => {
-    fetch("/todos")
+    fetch("https://todo-app-kvcr.onrender.com/todos")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -18,7 +18,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     //make an api call to create a new todo
-    const resp = await fetch("/todos", {
+    const resp = await fetch("https://todo-app-kvcr.onrender.com/todos", {
       method: "POST",
       body: JSON.stringify({ title: title, description: description }),
       headers: {
