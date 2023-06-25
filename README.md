@@ -1,5 +1,5 @@
 # Todo-App
-My first full-stack application  React + Express
+I have built my first full-stack application using React and Express
 
 # Features -> 
 See all the todos
