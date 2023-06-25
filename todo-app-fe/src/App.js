@@ -35,7 +35,7 @@ function App() {
   const handleDelete = async(e)=>{
     console.log(e.target.id)
     const id = e.target.id;
-    const resp = await fetch(`/todos/${id}`,{
+    const resp = await fetch(`https://todo-app-kvcr.onrender.com/todos/${id}`,{
       method:"DELETE",
       headers: {
         'Content-Type': 'application/json',
