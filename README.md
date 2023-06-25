@@ -3,7 +3,7 @@ I have built my first full-stack application using React and Express
 
 # Features -> 
 See all the todos <br>
-You can add a new todo <br>   
+You can add a new todo   
 Delete a todo
 
 How it looks - 
