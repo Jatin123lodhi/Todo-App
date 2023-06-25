@@ -8,7 +8,7 @@ const app = express();
 app.use(cors())
 app.use(bodyParser.json())
 //get all the todos
-app.get("/todos", (req, res) => {
+app.get("https://todo-app-kvcr.onrender.com/todos", (req, res) => {
     fs.readFile("todos.json", "utf-8", (err, data) => {
       if (err) throw err;
       res.send(JSON.parse(data));
@@ -17,7 +17,7 @@ app.get("/todos", (req, res) => {
 
 //create a new todo
 // let counter = 4;
-app.post("/todos", (req, res) => {
+app.post("https://todo-app-kvcr.onrender.com/todos", (req, res) => {
     const { title, description } = req.body;
     // const uniqueId = uuid();
     const uniqueId = Math.floor(Math.random()*100);
